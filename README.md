@@ -17,8 +17,8 @@ sudo apt install sierrabreeze
 ```
 
 ### Arch Linux
-
-SierraBreeze can also be installed from the [AUR](https://aur.archlinux.org/packages/sierrabreeze-kwin-decoration-git/) using
+Versão do repositório AUR está desatualizada, buildar a partir da fork!
+~~SierraBreeze can also be installed from the [AUR](https://aur.archlinux.org/packages/sierrabreeze-kwin-decoration-git/) using~~
 ``` shell
 yaourt sierrabreeze-kwin-decoration-git
 ```
@@ -44,6 +44,7 @@ sudo apt install build-essential libkf5config-dev libkdecorations2-dev libqt5x11
 
 ### Arch Linux
 ``` shell
+sudo pacman -S base-devel                                   # Equivalente ao build-essential
 sudo pacman -S kdecoration qt5-declarative qt5-x11extras    # Decoration
 sudo pacman -S cmake extra-cmake-modules                    # Installation
 ```
@@ -57,7 +58,7 @@ sudo dnf install "cmake(Qt5Core)" "cmake(Qt5Gui)" "cmake(Qt5DBus)" "cmake(Qt5X11
 
 In order to install the theme and add it to your decorations do the following:
 ``` shell
-git clone https://github.com/ishovkun/SierraBreeze
+git clone https://github.com/nataliafonseca/SierraBreeze
 cd SierraBreeze
 mkdir build
 cd build
